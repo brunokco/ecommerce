@@ -139,12 +139,7 @@ a.custom-card:hover {
 .checked {
   color: orange;
 }
-label,
-button{
-  font-family: 'Raleway';
-  font-weight: bold;
-  text-align: center;
-}
+
 button{
   background-color: black;
   color: white;

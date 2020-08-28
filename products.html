@@ -35,15 +35,17 @@
       <div class="row">
         <div class="col text-right">
           <div class="btn-group btn-group-toggle mb-4" data-toggle="buttons">
-            <label class="btn btn-light active" id="sortAsc">
-              <input type="radio" name="options" autocomplete="off" checked>Menor a Mayor
+            <label class="btn btn-light" id="sortAsc">
+              <input type="radio" name="options" autocomplete="off" checked><i
+              class="fas fa-sort-amount-up mr-3"></i>Menor a Mayor
             </label>
             <label class="btn btn-light" id="sortDesc">
-              <input type="radio" name="options" autocomplete="off">Mayor A Menor
+              <input type="radio" name="options" autocomplete="off" ><i
+              class="fas fa-sort-amount-down mr-3"></i> Mayor A Menor
             </label>
             <label class="btn btn-light" id="sortByCount">
               <input type="radio" name="options" autocomplete="off"><i
-                class="fas fa-sort-amount-down mr-1"></i>Relevancia
+              class="fas fa-sort-amount-down mr-3"></i>Relevancia
             </label>
           </div>
         </div>
@@ -53,18 +55,18 @@
         <div class="col-md-6 col-sm-12 mb-1 container">
           <div class="row container p-0 m-0">
             <div class="col">
-              <p class="font-weight-normal text-right my-2">Buscador por precio:</p>
+              <p class="font-weight-normal text-right my-2"><span><i class="fas fa-search-dollar"></i></span> Buscador por precio:</p>
             </div>
             <div class="col">
-              <input class="form-control" type="number" min="1"  placeholder="min." id="rangeFilterCountMin">
+             <input class="form-control" type="number" min="1"  placeholder="Minimo" id="rangeFilterCountMin">
             </div>
             <div class="col">
-              <input class="form-control" type="number" min="1" placeholder="máx." id="rangeFilterCountMax">
+              <input class="form-control" type="number" min="1" placeholder="Maximo" id="rangeFilterCountMax">
             </div>
             <div class="col-3 p-0">
               <div class="btn-group" role="group">
-                <button class="btn btn-light btn-block" id="rangeFilterCount">Buscar</button>
-                <button class="btn btn-link btn-sm" id="clearRangeFilter">Resetear</button>
+                <button class="btn btn-light btn-block" id="rangeFilterCount"><i class="fas fa-funnel-dollar"></i>Buscar</button>
+                <button class="btn btn-block btn-link" id="clearRangeFilter"><i class="fas fa-power-off"></i>Resetear</button>
               </div>
             </div>
           </div>
