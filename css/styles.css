@@ -139,3 +139,40 @@ a.custom-card:hover {
 .checked {
   color: orange;
 }
+label,
+button{
+  font-family: 'Raleway';
+  font-weight: bold;
+  text-align: center;
+}
+button{
+  background-color: black;
+  color: white;
+  height: 100%;
+}
+.container-1 input#search{
+  width: 250px;
+  height: 50px;
+  background: black;
+  border: none;
+  font-size: 10pt;
+  float: center;
+  color: white;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 8px;
+}
+input{
+  width: 120px;
+  height: 50px;
+  background: black;
+  border: none;
+  font-size: 10pt;
+  float: center;
+  color: white;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 8px;
+}

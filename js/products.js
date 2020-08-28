@@ -59,8 +59,9 @@ function showCategoriesList(){
                             <small class="text-muted">` + category.soldCount + ` artículos</small>
                             </div>
                             <p class="mb-1">` + category.description + `</p>
-                        </div></div>
-                        <p class="mb-1">` + category.cost + `USD` + `</p>
+                        
+                            <br>
+                        <h4 class="mb-4">  Precio: ` + category.cost + ` `+ `USD` + `</h4>
                     </div>
                 </div>
             </a>
@@ -93,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function(e){
             sortAndShowCategories(ORDER_ASC_BY_PRICE, resultObj.data);
         }
     });
-
+//clicks
     document.getElementById("sortAsc").addEventListener("click", function(e){
         sortAndShowCategories(ORDER_ASC_BY_PRICE);
     });
