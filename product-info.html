@@ -26,30 +26,67 @@
       <a class="py-2 d-none d-md-inline-block" id="user" href="my-profile.html"></a>
     </div>
   </nav>
-  <main role="main" class="pb-5">
-    <div class="text-center p-4">
-      
+  <main role="main">
+    <div class="container mt-5">
+      <h3 id="categoryName"></h3>
+      <hr class="my-3">
+      <dl>
+        <dt>Descripción del producto: </dt>
+        <dd>
+          <p id="categoryDescription"></p>
+        </dd>
+
+        <dt>Cantidad de productos vendidos: </dt>
+        <dd>
+          <p id="productCount"></p>
+        </dd>
+
+        <dt>Precio Contado: </dt>
+        <dd>
+          <p id="productCost"></p>
+        </dd>
+        <dt>Imágenes del articulo: </dt>
+        <dd>
+          <div class="row text-center text-lg-left pt-2" id="productImagesGallery">
+          </div>
+        </dd>
+
+      </dl>
+      <a type="button" class="btn btn-light btn-lg btn-block" href="products.html">Ver productos</a>
+    </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="list-group" id="cat-list-container">
-            </div>
+      <div class="row">
+        <div class="list-group" id="cat-list-container">
         </div>
+      </div>
+    
+
+    <div class="container" >
+      <div class="row text-center text-lg-left pt-2" id="related-container">Productos Relacionados: </div>
+    <div id="container-comments"></div>
+    <br>
+    <form action="" method="post">
+      <label for="inputComment">Introduce tu comentario: </label>
+      <input type="text-area" id="inputComment" required>
+      <input type="number" name="stars" max="5" min="0" required>
+
+    <button type="submit">Comentar!</button>
+    </form>
     </div>
+    </footer>
+    <div id="spinner-wrapper">
+      <div class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
-  </footer>
-  <div id="spinner-wrapper">
-    <div class="lds-ring">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </div>
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/init.js"></script>
-  <script src="js/product-info.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/product-info.js"></script>
 </body>
 
 </html>
