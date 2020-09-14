@@ -43,7 +43,7 @@ if (
   !window.location.href.endsWith('login.html') &&
   !(sessionStorage.getItem('logged'))) {
   window.location.href = 'login.html';
-  sessionStorage.setItem('usuario', usuario.value);
+  
 
 }
 

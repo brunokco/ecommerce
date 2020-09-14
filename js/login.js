@@ -7,11 +7,6 @@ function submitEventHandler(evento) {
 
 }
 
-
-
-
-
-
 document.getElementById('form-login').addEventListener('submit', submitEventHandler);
 
 //Función que se ejecuta una vez que se haya lanzado el evento de

@@ -171,3 +171,10 @@ input{
   -moz-border-radius: 5px;
   border-radius: 8px;
 }
+#date{
+  color: brown;
+  border: 15px;
+}
+#userComments{
+  color: darkblue;
+}
