@@ -51,9 +51,35 @@ var userGuardado = localStorage.getItem("email");
     document.getElementById("user").innerHTML = userGuardado;
    
 
+ 
+    //function seeUser() {
+    //       htmlContentToAppend += `
+  //      <div class="dropdown">
+      //    <button class="btn btn-secondary dropdown-toggle" type="button" id="user" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        //  </button>
+          //<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            //<a class="dropdown-item" href="my-profile.html">Mi perfil</a>
+           // <a class="dropdown-item" href="cart.html">Mi carrito</a>
+           // <a class="dropdown-item" id="logon" href="login.html">Cerrar Sesion</a>
+          //</div>
+        //</div>`
+      //}
+      //document.getElementById("menu-desplegable").innerHTML = htmlContentToAppend;
+  
+  
+
+
+
+
+
+
+
+
+
+
 //Función que se ejecuta una vez que se haya lanzado el evento de
 //que el documento se encuentra cargado, es decir, se encuentran todos los
 //elementos HTML presentes.
 document.addEventListener("DOMContentLoaded", function (e) {
-
+seeUser()
 });
