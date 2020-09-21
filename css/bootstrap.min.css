@@ -7057,7 +7057,7 @@ button.bg-dark:hover {
  .sticky-top {
   position:-webkit-sticky;
   position:sticky;
-  top:0;
+  top:1;
   z-index:1020
  }
 }

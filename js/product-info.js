@@ -35,9 +35,8 @@ function seeComents(array) {
             <br>
             <h3 class="text-align>Comentarios</h3>
             <div class="row text-center text-lg-left"></div>
-            <div id="date" class="container">` + comments.dateTime + `</div>
-            <div id="score"> Clasificacion ` + comments.score + ` estrellas! </div>
-            <div id="userComments"> Usuario:  ` +  ` ` + comments.user + ` </div>
+            <div id="date" class="container">` + comments.dateTime + ` Clasificacion ` + comments.score + ` estrellas! </div>
+            <div id="userComments"> Usuario:  ` + ` ` + comments.user + ` </div> 
             <br>
             <div id="desc"> ` + comments.description + `</div>
             <br>
@@ -79,20 +78,21 @@ document.addEventListener("DOMContentLoaded", function (e) {
         getJSONData(PRODUCTS_URL).then(function (resultObj) {
             if (resultObj.status === "ok") {
                 seeProductsRelated = resultObj.data;
-                
+
                 let htmlContentToAppend = "";
 
                 for (let i = 0; i < seeProductsInfo.relatedProducts.length; i++) {
                     let relatedProducts = seeProductsRelated[seeProductsInfo.relatedProducts[i]];
                     htmlContentToAppend += `
-                        <a href="product-info.html?`+ relatedProducts.name + `" class="list-group-item list-group-item-action">
-                        <div class="container">
-                        <div class="row text-center text-lg-left ">
-                        <img id='imagen' src="` + relatedProducts.imgSrc + `">
-                        <div class="col-2"><h2>`+ relatedProducts.name + ` </h2></div>       
-                        <div class="col-2"><p>`+ relatedProducts.description + `</p> </div>                
-                        </div>
-                        </div>`
+                    <div class=".img-style.row">   
+                            <div class=".row">
+                                    <img src="` + relatedProducts.imgSrc + `">
+                                    <div>
+                                    <h2>`+ relatedProducts.name + ` </h2>
+                                    </div>       
+                                    <p>`+ relatedProducts.cost + ` ` + "USD" + `</p>               
+                            </div>
+                    </div>`   
 
                 }
                 document.getElementById("related-container").innerHTML = htmlContentToAppend;

@@ -16,14 +16,13 @@
 </head>
 
 <body>
-  <nav class="site-header sticky-top py-1 bg-dark">
+  <nav class="site-header sticky-top py-4 bg-white">
     <div class="container d-flex flex-column flex-md-row justify-content-between">
-      <a class="py-2 d-none d-md-inline-block" href="index.html">Inicio</a>
-      <a class="py-2 d-none d-md-inline-block" href="categories.html">Categorías</a>
-      <a class="py-2 d-none d-md-inline-block" href="products.html">Productos</a>
-      <a class="py-2 d-none d-md-inline-block" href="sell.html">Vender</a>
-      <div idclass="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="user" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <a><img src="img/ico.png"></a>
+      <a><img id="image-header" src="img/cover_back1.png"></a>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="user" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
           <a class="dropdown-item" href="my-profile.html">Mi perfil</a>
@@ -31,6 +30,15 @@
           <a class="dropdown-item" id="logon" href="login.html">Cerrar Sesion</a>
         </div>
       </div>
+  </nav>
+  <nav class="site-header py-2 bg-dark">
+    <div class="container d-flex flex-column flex-md-row justify-content-between">
+      <a class="py-2 d-none d-md-inline-block" href="index.html">Inicio</a>
+      <a class="py-2 d-none d-md-inline-block" href="categories.html">Categorías</a>
+      <a class="py-2 d-none d-md-inline-block" href="products.html">Productos</a>
+      <a class="py-2 d-none d-md-inline-block" href="sell.html">Vender</a>
+      
+    </div>
     </div>
   </nav>
   <main role="main">
@@ -67,19 +75,42 @@
         <div class="list-group" id="cat-list-container">
         </div>
       </div>
-    
 
-    <div class="container" >
-      <div class="row text-center text-lg-left pt-2" id="related-container">Productos Relacionados: </div>
-    <div id="container-comments"></div>
-    <br>
-    <form action="" method="post">
-      <label for="inputComment">Introduce tu comentario: </label>
-      <input type="text-area" id="inputComment" required>
-      <input type="number" name="stars" max="5" min="0" required>
+      <h2 class="title" id="title">Productos Relacionados: </h2>
+      <div class="row">
+        <div class="col-sm-5" id="related-container">
+        </div>
+      </div>
+      <div class="panel panel-primary flex-md-row">
+        <br>
+        <div id="comments-style">
+          <h2>COMENTARIOS</h2>
+        </div>
+      </div>
+      <div id="container-comments">
+      </div>
 
-    <button type="submit">Comentar!</button>
-    </form>
+      <br>
+      <div class="col-sm-9">
+        <div class="form-group">
+          <label for="comment">Introduce tu comentario: </label>
+          <input class="form-control" row="5" id="comment"></input>
+        </div>
+        <div class="form-group">
+          <label for="star">Estrellas:</label>
+          <select class="form-control" id="star">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <button type="submit">Comentar!</button>
+        </div>
+
+
+
+      </div>
     </div>
     </footer>
     <div id="spinner-wrapper">
