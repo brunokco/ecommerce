@@ -84,16 +84,16 @@ document.addEventListener("DOMContentLoaded", function (e) {
                 for (let i = 0; i < seeProductsInfo.relatedProducts.length; i++) {
                     let relatedProducts = seeProductsRelated[seeProductsInfo.relatedProducts[i]];
                     htmlContentToAppend += `
-                    <div class=".img-style.row">   
-                            <div class=".row">
+                    <div class="container">
+                            <div class="img-style">   
                                     <img src="` + relatedProducts.imgSrc + `">
                                     <div>
                                     <h2>`+ relatedProducts.name + ` </h2>
                                     </div>       
                                     <p>`+ relatedProducts.cost + ` ` + "USD" + `</p>               
+                    
                             </div>
-                    </div>`   
-
+                    </div>` 
                 }
                 document.getElementById("related-container").innerHTML = htmlContentToAppend;
             }

@@ -240,6 +240,13 @@ img{
 
 }
 .img-style{
-  align-items: flex-end;
-  display: flexbox;
+  justify-content: center;
+  display: inline;
+  object-fit: contain;
+}
+
+#nav-a{
+  background-color:#d61c6c;
+  font-style: normal;
+  color: black;
 }
