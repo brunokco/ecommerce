@@ -35,8 +35,9 @@ function seeComents(array) {
             <br>
             <h3 class="text-align>Comentarios</h3>
             <div class="row text-center text-lg-left"></div>
-            <div id="date" class="container">` + comments.dateTime + ` Clasificacion ` + comments.score + ` estrellas! </div>
-            <div id="userComments"> Usuario:  ` + ` ` + comments.user + ` </div> 
+            <div id="date" class="container">` + comments.dateTime + `
+             <div> `  + comments.score + ` estrellas ` + `  </div>
+             <div id="userComments"> Usuario:  ` + ` ` + comments.user + ` </div> 
             <br>
             <div id="desc"> ` + comments.description + `</div>
             <br>
@@ -84,7 +85,8 @@ document.addEventListener("DOMContentLoaded", function (e) {
                 for (let i = 0; i < seeProductsInfo.relatedProducts.length; i++) {
                     let relatedProducts = seeProductsRelated[seeProductsInfo.relatedProducts[i]];
                     htmlContentToAppend += `
-                    <div class="container">
+                    <div class="container"> 
+                    <a href="product-info.html">
                             <div class="img-style">   
                                     <img src="` + relatedProducts.imgSrc + `">
                                     <div>
@@ -109,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
         if (resultObj.status === "ok") {
             seeComentsInfo = resultObj.data;
 
-            seeComents(seeComentsInfo)
+            seeComents(seeComentsInfo) + document.getElementById("coment").value.innerHTML
 
         }
     });

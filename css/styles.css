@@ -57,6 +57,8 @@ footer p {
 .site-header a {
   color: white;
   transition: ease-in-out color .15s;
+  display: flex;
+  align-items: center;
 }
 
 .light-text {
@@ -173,15 +175,14 @@ button{
 }
 #date{
   color: black;
-  border: 2px;
-  border-style: ridge ;
-  font-size: 15px;
+  /* border: 2px; */
+  /* border-style: ridge ; */
+  font-size: 20px;
   text-align: center;
-  font-style: oblique ;
+  font-style: black ;
 }
 #userComments{
   color: darkblue;
-  font-family: 'Georgia', Times New Roman , Times, serif;
   text-align: center;
   font-size: 25px;
 }
@@ -202,6 +203,10 @@ img{
   border: 13px;
 }
 #container-comments{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
   color: rgb(0, 0, 0);
   border: 2px;
   border-style: solid;
@@ -211,7 +216,8 @@ img{
   align-content: flex-end;
 
 }
-#title{ text-align: center;
+#title{ 
+  text-align: center;
   background-color: rgba(255, 23, 6, 0.288);
   border-style: solid;
   border-radius: 15px;
@@ -243,6 +249,7 @@ img{
   justify-content: center;
   display: inline;
   object-fit: contain;
+  color: black;
 }
 
 #nav-a{
@@ -253,5 +260,17 @@ img{
 
 
 #h1{
-  text-align: center;
+  text-align: centerc;
+}
+
+#related-container{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  color: black;
+
+}
+#form{
+  display: flex;
+  justify-content: center;
 }
