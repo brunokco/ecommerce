@@ -44,7 +44,7 @@
 .jumbotron .lead{
   font-size: 38px;
 }
-
+/*PAGE*/
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -160,6 +160,10 @@ button{
   -moz-border-radius: 5px;
   border-radius: 8px;
 }
+
+
+/*-------------------*/
+/*USER*/
 .signin{
   width: 120px;
   height: 50px;
@@ -173,35 +177,42 @@ button{
   -moz-border-radius: 5px;
   border-radius: 8px;
 }
-#date{
-  color: black;
-  /* border: 2px; */
-  /* border-style: ridge ; */
-  font-size: 20px;
-  text-align: center;
-  font-style: black ;
-}
-#userComments{
-  color: darkblue;
-  text-align: center;
-  font-size: 25px;
-}
+
+
 #desc{
   text-align: center;
   font-size: x-large;
   font-family: 'Raleway';
 }
-img{
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-  
-}
+
 .box{
   border-style: solid;
   border-color: black;
   border: 13px;
 }
+/*--------------------------*/
+/*PRODUCTO INFO*/
+#title{ 
+  text-align: center;
+  background-color: rgba(255, 23, 6, 0.288);
+  border-style: solid;
+  border-radius: 15px;
+  border-color: seagreen;
+  
+}
+img{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+
+}
+#form{
+  display: flex;
+  justify-content: center;
+}
+
+
+            /*COMMENTS*/
 #container-comments{
   display: flex;
   flex-direction: column;
@@ -211,19 +222,6 @@ img{
   border: 2px;
   border-style: solid;
 }
-#image-header{
-  height: 55px;
-  align-content: flex-end;
-
-}
-#title{ 
-  text-align: center;
-  background-color: rgba(255, 23, 6, 0.288);
-  border-style: solid;
-  border-radius: 15px;
-  border-color: seagreen;
-  
-}
 #comments-style {
   text-align: center;
   background-color: rgba(255, 23, 6, 0.288);
@@ -232,24 +230,23 @@ img{
   border-color: seagreen;
   
 }
-#box{
+#userComments{
+  color: darkblue;
   text-align: center;
-  border-style: solid;
-  border-radius: 15px;
+  font-size: 25px;
+}
+/*--------------------------*/
+/*NAV*/
+#image-header{
+  height: 55px;
+  align-content: flex-end;
 
-  
 }
 #user{
   background-color:white;
   font-style: normal;
   color: black;
 
-}
-.img-style{
-  justify-content: center;
-  display: inline;
-  object-fit: contain;
-  color: black;
 }
 
 #nav-a{
@@ -258,9 +255,9 @@ img{
   color: black;
 }
 
-
+/*PRODUCTOS*/
 #h1{
-  text-align: centerc;
+  text-align: center;
 }
 
 #related-container{
@@ -270,7 +267,20 @@ img{
   color: black;
 
 }
-#form{
-  display: flex;
-  justify-content: center;
+#date{
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  font-style: black ;
+}
+/*CART*/
+.table{
+  display: flexbox;
+
+}
+td{
+  display: flexbox;
+}
+#icono{
+  max-width: 50%;
 }
