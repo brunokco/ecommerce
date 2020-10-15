@@ -1,6 +1,6 @@
 var cartBuy = {};
 var sumatoria = 0;
-        var sumatoria1 = 0;
+var sumatoria1 = 0;
 function showProductosCart(array) {
     
     let htmlContentToAppend = "";
@@ -8,10 +8,10 @@ function showProductosCart(array) {
         
         let arrayCart = array[i];
         let sumatoria = arrayCart.unitCost * arrayCart.count; 
-        if (arrayCart.currency === "USD"){ 
-          sumatoria1 = arrayCart.cost * 40;}
-          else {
-          }
+        if (arrayCart.currency === "USD"){
+        sumatoria1 = arrayCart.unitCost * 40;
+        array.currency = "UYU";
+    }
         htmlContentToAppend += `
         <div class="col"
             <div class="row">
@@ -19,7 +19,6 @@ function showProductosCart(array) {
                     <table class="table">
                         <thead>
                             <tr>
-                                <th></th>
                                 <th>Producto</th>
                                 <th>Cantidad</th>
                                 <th>Precio Unitario</th>
@@ -28,11 +27,10 @@ function showProductosCart(array) {
                         </thead>
                         <tbody>
                             <tr>
-                                <td><img id="icono"class="img-cart" src="` + arrayCart.src + `" alt="">
-                                <td>` + arrayCart.name + ` </td>
+                                <td ><img id="icono"class="img-cart" src="` + arrayCart.src + `" alt=""><p style="justify-content-center"> `+ arrayCart.name + `</p> </td>
                                 <td>` + arrayCart.count + `</td>
                                 <td>` + arrayCart.unitCost + arrayCart.currency + ` </td>
-                                <td>` + sumatoria + arrayCart.currency + `</td>
+                                <td>` + sumatoria1 + array.currency + `</td>
                             </tr>
                         </tbody>
                     </table>
@@ -55,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
         if (resultObj.status === "ok") {
             cartBuy = resultObj.data.articles;
             showProductosCart(cartBuy);
-            document.getElementById("subtotal").innerHTML = (sumatoria1 * 40) + sumatoria;
+            document.getElementById("subtotal").innerHTML = total = (sumatoria + sumatoria1);
         }
     })
 })
